@@ -68,3 +68,63 @@ for n in list:
 
 res=nl+pl
 print(f" the final list : {res}")
+
+Day-2 : 01-09-2025
+===============================================================
+
+# reverse list
+
+num=[10,30,2,4,5,90]
+
+reverse=num[::-1]
+print(f"original list  {num}")
+print(f"reverse list  {reverse}")
+
+
+# find the second largest number 
+l=[10,30,2,4,5,90]
+f=s=0
+for n in l:
+    if n>f: # 10>0
+        s=f  # this swapping is important here 
+        f=n
+    elif n>s :
+        s=n   
+print(f"the first ax number is {f}") 
+print(f"the second max number is {s}")  
+
+
+# Tuple 
+#prepare 
+
+# A tuple is like a list, but immutable (cannot be changed after creation).
+
+# Think of it as a read-only list.
+# Examples
+ 
+t = (1, 2, 3, 4)
+print(t[0]) 
+print(type(t))
+
+
+t1 = (1, 2, 3)
+t2 = 1, 2, 3   # without brackets
+t3 = (5,) 
+
+print(f"General syntax (1, 2, 3) : {t1}") 
+
+print(f" syntax 1,2,3 : {t2}") 
+
+print(f" dfferent (5,): {t3}")
+
+# Packing 
+
+person = ("John", 25, "Developer")  # packing
+
+name,age,desi=person
+
+print(f" Name  : {name}") 
+
+print(f" Age: {age}")
+
+print(f" designation : {desi}")
