@@ -128,3 +128,58 @@ print(f" Name  : {name}")
 print(f" Age: {age}")
 
 print(f" designation : {desi}")
+
+Day-3 02-09-2025
+======================================================
+
+# Tuple practice 
+
+# we can return multiple values
+
+def arithameticOperations(a,b):
+    return a+b,a-b,a*b
+
+sum,sub,mul=arithameticOperations(10,10)
+
+print(f" add ,sub,mul:{sum},{sub},{mul}")
+
+# Nested tuples 
+
+matrix = ((1,2), (3,4), (5,6))
+print(matrix[1][0]) # 3
+print(matrix[0][0]) # 1
+print(matrix[2][1]) # 6
+
+# tuple functions -> len(),max(),min(),count(),index()
+
+t = (1, 2, 2, 3, 4, 2,7,9)
+
+print(f"length :{len(t)}") # 8
+
+print(f" mix number :{max(t)}") # 9
+
+print(f" min number :{min(t)}") # 1
+
+print(f" min number :{t.count(2)}") # 3
+
+print(f" index :{t.index(9)}") # 7
+
+# store multiple objects 
+
+t = (1, [2,3], 4,{'name':'masthan'})
+t[1][0] = 99
+print(t)   # (1, [99, 3], 4,{'name': 'masthan'})
+
+# Tuple as Dictionary key
+
+locations = {
+    (17.385, 78.486): "Hyderabad",
+    (28.704, 77.102): "Delhi"
+}
+print(locations[(17.385, 78.486)])  # Hyderabad
+
+
+for cordi,city in locations.items():
+    print(f"the cordinates: {cordi} and city :{city}")
+
+
