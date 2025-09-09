@@ -181,5 +181,60 @@ print(locations[(17.385, 78.486)])  # Hyderabad
 
 for cordi,city in locations.items():
     print(f"the cordinates: {cordi} and city :{city}")
+    
+Day -4 : 09-09-2025
+============================================
+#Set
+
+#Unique elements, no duplicates
+
+#Good for membership tests, mathematical set ops
+
+list1 = [1, 2, 3, 4, 5, 6]
+list2 = [4, 5, 6, 7, 8, 9]
+
+common_elements= set(list1) & set(list2) # & 
+
+print(f"common elements :{common_elements}")
+
+# Remove Duplicates from a List
+
+nums = [1, 2, 2, 3, 4, 4, 5]
+
+uniquevales=set(nums)
+
+uniquevalist=list(set(nums))
+
+print(f"unique elements :{uniquevales}")
+
+print(f"unique elements list:{uniquevalist}")
+
+#Find Elements in List1 but not in List2 
+
+a = [10, 20, 30, 40]
+b = [30, 40, 50]
+
+resul=set(a) - set(b)
+
+print(f"list1 elements not in list 2 :{resul}")
+
+# Check If Two Strings are Anagrams Using Sets
+
+s1 = "listen"
+s2 = "silent1"
+
+is_anagram= set(s1) == set(s2)
+
+print(f"anagram  :{is_anagram}")
+
+# Count Unique Vowels in a String
+
+text = "programming in python"
+vowels = set("aeiou")
+
+found = set(text) & vowels
+print("Unique vowels found:", found)
+
+    
 
 
