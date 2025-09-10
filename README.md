@@ -235,6 +235,55 @@ vowels = set("aeiou")
 found = set(text) & vowels
 print("Unique vowels found:", found)
 
-    
+Day 5: 10-09-2025
+==========================================
+
+What is NumPy?
+
+NumPy (Numerical Python) is a Python library for working with numerical data.
+
+It provides:
+
+Multi-dimensional arrays (ndarray) → much faster than Python lists.
+
+Mathematical functions to operate on arrays.
+
+Linear algebra, statistics, random numbers → backbone of AI/ML.
+
+👉 In short: Python lists = general purpose, NumPy arrays = scientific computing.
+
+Why is NumPy Important?
+
+Performance → NumPy is written in C under the hood, so operations are 50x–100x faster than normal Python loops.
+
+Foundation of AI/ML → Libraries like Pandas, TensorFlow, PyTorch, Scikit-learn are built on top of NumPy.
+
+Vectorized Operations → Instead of looping element by element, NumPy applies operations to the whole array at once (SIMD).
+
+Memory Efficient → Stores elements in a compact format compared to Python lists.
+
+Where is NumPy Used? (Potential Usages)
+
+✅ 1. Data Analysis / Data Science
+
+Handling large datasets efficiently.
+
+Example: Stock prices, sensor data, customer behavior.
+
+✅ 2. Machine Learning & Deep Learning
+
+Representing feature matrices, training data, and weights of neural networks.
+
+✅ 3. Image Processing
+
+Images are just arrays of pixels (RGB values). NumPy handles them easily.
+
+✅ 4. Scientific Computing
+
+Physics simulations, weather prediction, genetics, astronomy → heavy on matrix computations.
+
+✅ 5. Finance
+
+Risk analysis, Monte Carlo simulations (randomness in predictions).    
 
 
