@@ -284,6 +284,36 @@ Physics simulations, weather prediction, genetics, astronomy → heavy on matrix
 
 ✅ 5. Finance
 
-Risk analysis, Monte Carlo simulations (randomness in predictions).    
+Risk analysis, Monte Carlo simulations (randomness in predictions). 
 
+Day 6 : 11-09-2025
+===========================
+# Examples of NumPy in Action
+
+# Faster Computation than Python
+
+import numpy as np
+import time
+
+normalList=list(range(1,1000000))
+
+start_time=time.time()
+
+result=[n*2 for n in normalList]
+
+end_time=time.time()
+
+print(f"total time taken {end_time -start_time}")
+
+# using numpy
+
+numpyList=np.arange(1,1000000)
+
+start_time=time.time()
+
+numpyList**2
+
+end_time=time.time()
+
+print(f"total time taken in numpy {end_time -start_time}")
 
